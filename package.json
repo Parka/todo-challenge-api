@@ -1,5 +1,5 @@
 {
-    "name": "express-node",
+    "name": "todo-challenge-api",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
