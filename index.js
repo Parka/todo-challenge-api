@@ -13,3 +13,9 @@ app.listen(config.PORT, function () {
 })
 
 app.use('/tasks', tasksRouter)
+
+app.use((err, req, res, next)=>{
+    console.error(err)
+    const {message} = err
+    res.status(500).json({message})
+})
